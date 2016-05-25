@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:weightSum="1">
+
+
+	<ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+		android:layout_weight="1.0">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="接收数据HEX显示:\n"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal" />
+    </ScrollView>
+
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/editText_data"
+			android:layout_weight="1"
+			android:maxLines="1"
+			android:maxLength="20" />
+
+		<Button
+			android:text="发送"
+			android:id="@+id/btn_send"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="onJiaSuButtonClicked">
+		</Button>
+
+	</LinearLayout>
+
+</LinearLayout>

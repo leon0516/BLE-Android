@@ -1,0 +1,38 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="180"
+        android:entries="@array/pref_sync_frequency_titles"
+        android:entryValues="@array/pref_sync_frequency_values"
+        android:key="sync_frequency"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_sync_frequency" />
+    <EditTextPreference
+        android:key="password"
+        android:summary="Password"
+        android:title="Password" />
+    <CheckBoxPreference
+        android:key="persist"
+        android:summary="Yes/No"
+        android:title="Keep me signed in" />
+    <MultiSelectListPreference
+        android:key="abc"
+        android:entries="@array/pref_sync_frequency_titles"
+        android:entryValues="@array/pref_sync_frequency_values"
+        android:title="重复"
+        android:summary="无"
+        />
+    <SwitchPreference
+        android:key="switch1"
+        android:summary="This is switch 1"
+        android:title="Switch 1" />
+
+        <Preference
+            android:key="dialog_preference"
+            android:title="关于"
+            android:summary="关于软件"/>
+
+
+
+</PreferenceScreen>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BLE</string>
+    <string name="settings">设置</string>
+    <string name="connect">连接</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_devices">查找设备</string>
+    <string name="ble_not_supported">您的设备不支持BLE</string>
+    <string name="menu_scan">搜索</string>
+    <string name="menu_stop">停止</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <!-- Example settings for Data & Sync -->
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+</resources>
