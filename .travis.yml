@@ -14,3 +14,13 @@ before_install:
   - chmod +x gradlew
 script:
   - "./gradlew assembleRelease"
+deploy:
+  provider: releases
+  api_key:
+    secure: T0xEHrOolUTbFJvIuzQD41q1Jitfc37xjozbc7p2J017b9LWoMFKplSGgZiNrwC4EpaTR3lVffEo6rc7L4x9V5ZUT2nYPyhZa/bx5nSXw/UfY2/0jxFyEKZnpTHSxO8UlJAT0mZIe9yePEfPTDdh+Fvd786PA+ni0kEJcFLOJepa1e2+KW4VDzuiy23KVWtNxLDqjp3O1KdlBFcGzjtWd1On7YxSRFGYmOJnysptT0fIqkkXCCP311OMXy+/eTcpMseOleOR+s5gkqBBwDcnA5yaZT3HmcO5JEJtj8QvlNINXK/cRqBjPyszG/BNMZzU4iMcH1tTZwCBynzOjwcxCGUL5JvrJN+3t13zxSRyHu6vWUeaEbFkUyFrkuKJUZDwUIYb66bwa8mNrakwVjjVGQZM53LqTLmsWppg+Si8/BkrSGaXwKib3B3TmtJCxK0tu/7UPRi5Kev3ChGtAQbjllFtKj/6hqMYMchXXr7LAdCL2GZm4GxY6Xk7EwEOcXCyp7l80qRawf0XMgKHo/6nTO9lXG6zNsPk/Nx7+Z7Srk1QVoy2dpRmxTNqYmXfwp8D9YplbfCus4ki/3KdAGEp1zuZxOYQSUjQFm8lf3JBh6AQSquyiPBpddtm2Sx0+24y/LlpzS5JGyB4MCEusd8rjA0dc4Ne9Ihm/jAb521yipY=
+  file: app/build/outputs/apk/app-release.apk
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: leon0516/BLE-Android
+    
